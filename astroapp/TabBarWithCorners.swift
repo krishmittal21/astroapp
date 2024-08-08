@@ -22,7 +22,7 @@ import UIKit
         
         shapeLayer.path = createPath()
         shapeLayer.strokeColor = UIColor.gray.cgColor
-        shapeLayer.fillColor = color?.cgColor ?? UIColor.white.cgColor
+        shapeLayer.fillColor = color?.cgColor ?? UIColor.systemIndigo.cgColor
         shapeLayer.lineWidth = 1
         shapeLayer.shadowColor = UIColor.gray.cgColor
         shapeLayer.shadowOffset = CGSize(width: 0, height: -2);

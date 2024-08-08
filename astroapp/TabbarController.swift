@@ -30,7 +30,7 @@ class TabbarController: UITabBarController {
             upperLineView.removeFromSuperview()
         }
         upperLineView = UIView(frame: CGRect(x: tabView.frame.minX + spacing, y: tabView.frame.minY + 0.1, width: tabView.frame.size.width - spacing * 2, height: 4))
-        upperLineView.backgroundColor = UIColor.richPink1
+        upperLineView.backgroundColor = UIColor.white
         tabBar.addSubview(upperLineView)
     }
 
