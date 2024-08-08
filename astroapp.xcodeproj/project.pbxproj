@@ -15,6 +15,7 @@
 		CC2A3D1F2C64B52F003A6767 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CC2A3D1E2C64B52F003A6767 /* Base */; };
 		CC2A3D272C64BB1B003A6767 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D262C64BB1B003A6767 /* TabbarController.swift */; };
 		CC2A3D292C64BC2C003A6767 /* TabBarWithCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D282C64BC2C003A6767 /* TabBarWithCorners.swift */; };
+		CC2A3D2B2C64C7A2003A6767 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D2A2C64C7A2003A6767 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CC2A3D202C64B52F003A6767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC2A3D262C64BB1B003A6767 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		CC2A3D282C64BC2C003A6767 /* TabBarWithCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWithCorners.swift; sourceTree = "<group>"; };
+		CC2A3D2A2C64C7A2003A6767 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				CC2A3D202C64B52F003A6767 /* Info.plist */,
 				CC2A3D262C64BB1B003A6767 /* TabbarController.swift */,
 				CC2A3D282C64BC2C003A6767 /* TabBarWithCorners.swift */,
+				CC2A3D2A2C64C7A2003A6767 /* UIColorExtension.swift */,
 			);
 			path = astroapp;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				CC2A3D272C64BB1B003A6767 /* TabbarController.swift in Sources */,
 				CC2A3D132C64B52D003A6767 /* AppDelegate.swift in Sources */,
 				CC2A3D152C64B52D003A6767 /* SceneDelegate.swift in Sources */,
+				CC2A3D2B2C64C7A2003A6767 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

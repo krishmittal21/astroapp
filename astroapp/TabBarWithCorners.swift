@@ -21,8 +21,8 @@ import UIKit
         let shapeLayer = CAShapeLayer()
         
         shapeLayer.path = createPath()
-        shapeLayer.strokeColor = UIColor.gray.cgColor
-        shapeLayer.fillColor = color?.cgColor ?? UIColor.systemIndigo.cgColor
+        shapeLayer.strokeColor = UIColor.brandVioletColor.cgColor
+        shapeLayer.fillColor = color?.cgColor ?? UIColor.brandVioletColor.cgColor
         shapeLayer.lineWidth = 1
         shapeLayer.shadowColor = UIColor.gray.cgColor
         shapeLayer.shadowOffset = CGSize(width: 0, height: -2);
@@ -52,8 +52,8 @@ import UIKit
         super.layoutSubviews()
         self.isTranslucent = true
         var tabFrame = self.frame
-        tabFrame.size.height = 65 + self.safeAreaInsets.bottom
-        tabFrame.origin.y = self.frame.origin.y + self.frame.height - 65 - self.safeAreaInsets.bottom
+        tabFrame.size.height = 75 + self.safeAreaInsets.bottom
+        tabFrame.origin.y = self.frame.origin.y + self.frame.height - 75 - self.safeAreaInsets.bottom
         self.layer.cornerRadius = 18
         self.frame = tabFrame
         self.items?.forEach({ $0.titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -5.0) })
