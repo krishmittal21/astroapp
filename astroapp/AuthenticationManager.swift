@@ -418,8 +418,6 @@ extension AuthenticationManager {
         
         userRef.updateData([
             AAUserModelName.avatarURL: url,
-            AAUserModelName.lastUpdated: Date().timeIntervalSince1970,
-            AAUserModelName.editedBy: userId
         ]) { error in
             if let error = error {
                 print("Error updating user avatar URL: \(error.localizedDescription)")
@@ -431,42 +429,34 @@ extension AuthenticationManager {
     }
 }
 
-extension AuthenticationManager {
-    func updateUser(firstName: String, lastName: String, phone: String) async -> Bool {
-        guard let userId = Auth.auth().currentUser?.uid else {
-            errorMessage = "No authenticated user found"
-            return false
-        }
-        
-        let db = Firestore.firestore()
-        let userRef = db.collection(AAUserModelName.userFirestore).document(userId)
-        
-        do {
-            try await userRef.updateData([
-                AAUserModelName.firstName: firstName,
-                AAUserModelName.lastName: lastName,
-                AAUserModelName.phone: phone,
-                AAUserModelName.lastUpdated: Date().timeIntervalSince1970,
-                AAUserModelName.editedBy: userId
-            ])
-            
-            if var updatedUser = self.user {
-                updatedUser.firstName = firstName
-                updatedUser.lastName = lastName
-                updatedUser.phone = phone
-                updatedUser.lastUpdated = Date().timeIntervalSince1970
-                updatedUser.editedBy = userId
-                self.user = updatedUser
-            }
-            
-            return true
-        } catch {
-            print("Error updating user: \(error.localizedDescription)")
-            errorMessage = error.localizedDescription
-            return false
-        }
-    }
-}
+//extension AuthenticationManager {
+//    func updateUser(firstName: String, lastName: String, phone: String) async -> Bool {
+//        guard let userId = Auth.auth().currentUser?.uid else {
+//            errorMessage = "No authenticated user found"
+//            return false
+//        }
+//        
+//        let db = Firestore.firestore()
+//        let userRef = db.collection(AAUserModelName.userFirestore).document(userId)
+//        
+//        do {
+//            try await userRef.updateData([
+//                AAUserModelName.phone: phone,
+//            ])
+//            
+//            if var updatedUser = self.user {
+//                updatedUser.name = name
+//                self.user = updatedUser
+//            }
+//            
+//            return true
+//        } catch {
+//            print("Error updating user: \(error.localizedDescription)")
+//            errorMessage = error.localizedDescription
+//            return false
+//        }
+//    }
+//}
 
 // MARK: - Helper Functions
 
