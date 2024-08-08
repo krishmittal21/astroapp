@@ -16,7 +16,7 @@
 		CC081C302C65061100ED81BB /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC081C2F2C65061100ED81BB /* Utilities.swift */; };
 		CC2A3D132C64B52D003A6767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D122C64B52D003A6767 /* AppDelegate.swift */; };
 		CC2A3D152C64B52D003A6767 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D142C64B52D003A6767 /* SceneDelegate.swift */; };
-		CC2A3D172C64B52D003A6767 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D162C64B52D003A6767 /* ViewController.swift */; };
+		CC2A3D172C64B52D003A6767 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D162C64B52D003A6767 /* AuthenticationViewController.swift */; };
 		CC2A3D1A2C64B52D003A6767 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CC2A3D192C64B52D003A6767 /* Base */; };
 		CC2A3D1C2C64B52F003A6767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2A3D1B2C64B52F003A6767 /* Assets.xcassets */; };
 		CC2A3D1F2C64B52F003A6767 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CC2A3D1E2C64B52F003A6767 /* Base */; };
@@ -45,7 +45,7 @@
 		CC2A3D0F2C64B52D003A6767 /* astroapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = astroapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2A3D122C64B52D003A6767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC2A3D142C64B52D003A6767 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CC2A3D162C64B52D003A6767 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC2A3D162C64B52D003A6767 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		CC2A3D192C64B52D003A6767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC2A3D1B2C64B52F003A6767 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC2A3D1E2C64B52F003A6767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +76,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC081C312C650D1900ED81BB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CC081C292C64F96700ED81BB /* Constants.swift */,
+				CC081C332C650D3000ED81BB /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CC081C322C650D2100ED81BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC081C232C64D03B00ED81BB /* AAUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC081C332C650D3000ED81BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CC2A3D2A2C64C7A2003A6767 /* UIColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CC081C342C650D4100ED81BB /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				CC2A3D3A2C64CED8003A6767 /* GoogleService-Info.plist */,
+				CC2A3D122C64B52D003A6767 /* AppDelegate.swift */,
+				CC2A3D142C64B52D003A6767 /* SceneDelegate.swift */,
+				CC2A3D1B2C64B52F003A6767 /* Assets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		CC081C352C650D4D00ED81BB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC081C392C650DA300ED81BB /* Authentication */,
+				CC2A3D262C64BB1B003A6767 /* TabbarController.swift */,
+				CC081C2B2C64FAAF00ED81BB /* BaseViewController.swift */,
+				CC081C2D2C64FB9200ED81BB /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CC081C362C650D5C00ED81BB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CC2A3D1D2C64B52F003A6767 /* LaunchScreen.storyboard */,
+				CC2A3D182C64B52D003A6767 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CC081C372C650D7300ED81BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC2A3D282C64BC2C003A6767 /* TabBarWithCorners.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC081C382C650D7C00ED81BB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CC2A3D3D2C64CF96003A6767 /* AuthenticationManager.swift */,
+				CC2A3D3F2C64CFAD003A6767 /* FirestoreDatabaseManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		CC081C392C650DA300ED81BB /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				CC081C272C64D73C00ED81BB /* LoginViewController.swift */,
+				CC081C252C64D73000ED81BB /* RegisterViewController.swift */,
+				CC2A3D162C64B52D003A6767 /* AuthenticationViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		CC2A3D062C64B52D003A6767 = {
 			isa = PBXGroup;
 			children = (
@@ -96,26 +179,14 @@
 			isa = PBXGroup;
 			children = (
 				CC2A3D3C2C64CF22003A6767 /* astroapp.entitlements */,
-				CC2A3D3A2C64CED8003A6767 /* GoogleService-Info.plist */,
-				CC2A3D122C64B52D003A6767 /* AppDelegate.swift */,
-				CC2A3D142C64B52D003A6767 /* SceneDelegate.swift */,
-				CC2A3D162C64B52D003A6767 /* ViewController.swift */,
-				CC2A3D182C64B52D003A6767 /* Main.storyboard */,
-				CC081C2F2C65061100ED81BB /* Utilities.swift */,
-				CC2A3D1B2C64B52F003A6767 /* Assets.xcassets */,
-				CC2A3D1D2C64B52F003A6767 /* LaunchScreen.storyboard */,
 				CC2A3D202C64B52F003A6767 /* Info.plist */,
-				CC2A3D262C64BB1B003A6767 /* TabbarController.swift */,
-				CC2A3D282C64BC2C003A6767 /* TabBarWithCorners.swift */,
-				CC2A3D3F2C64CFAD003A6767 /* FirestoreDatabaseManager.swift */,
-				CC2A3D3D2C64CF96003A6767 /* AuthenticationManager.swift */,
-				CC2A3D2A2C64C7A2003A6767 /* UIColorExtension.swift */,
-				CC081C232C64D03B00ED81BB /* AAUser.swift */,
-				CC081C252C64D73000ED81BB /* RegisterViewController.swift */,
-				CC081C272C64D73C00ED81BB /* LoginViewController.swift */,
-				CC081C292C64F96700ED81BB /* Constants.swift */,
-				CC081C2B2C64FAAF00ED81BB /* BaseViewController.swift */,
-				CC081C2D2C64FB9200ED81BB /* HomeViewController.swift */,
+				CC081C382C650D7C00ED81BB /* Managers */,
+				CC081C372C650D7300ED81BB /* Views */,
+				CC081C362C650D5C00ED81BB /* Storyboards */,
+				CC081C352C650D4D00ED81BB /* ViewControllers */,
+				CC081C342C650D4100ED81BB /* Support */,
+				CC081C322C650D2100ED81BB /* Model */,
+				CC081C312C650D1900ED81BB /* Helpers */,
 			);
 			path = astroapp;
 			sourceTree = "<group>";
@@ -205,7 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC081C2C2C64FAAF00ED81BB /* BaseViewController.swift in Sources */,
-				CC2A3D172C64B52D003A6767 /* ViewController.swift in Sources */,
+				CC2A3D172C64B52D003A6767 /* AuthenticationViewController.swift in Sources */,
 				CC081C262C64D73000ED81BB /* RegisterViewController.swift in Sources */,
 				CC081C302C65061100ED81BB /* Utilities.swift in Sources */,
 				CC2A3D292C64BC2C003A6767 /* TabBarWithCorners.swift in Sources */,
