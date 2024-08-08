@@ -13,6 +13,8 @@
 		CC2A3D1A2C64B52D003A6767 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CC2A3D192C64B52D003A6767 /* Base */; };
 		CC2A3D1C2C64B52F003A6767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2A3D1B2C64B52F003A6767 /* Assets.xcassets */; };
 		CC2A3D1F2C64B52F003A6767 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CC2A3D1E2C64B52F003A6767 /* Base */; };
+		CC2A3D272C64BB1B003A6767 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D262C64BB1B003A6767 /* TabbarController.swift */; };
+		CC2A3D292C64BC2C003A6767 /* TabBarWithCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D282C64BC2C003A6767 /* TabBarWithCorners.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CC2A3D1B2C64B52F003A6767 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC2A3D1E2C64B52F003A6767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC2A3D202C64B52F003A6767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC2A3D262C64BB1B003A6767 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		CC2A3D282C64BC2C003A6767 /* TabBarWithCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWithCorners.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				CC2A3D1B2C64B52F003A6767 /* Assets.xcassets */,
 				CC2A3D1D2C64B52F003A6767 /* LaunchScreen.storyboard */,
 				CC2A3D202C64B52F003A6767 /* Info.plist */,
+				CC2A3D262C64BB1B003A6767 /* TabbarController.swift */,
+				CC2A3D282C64BC2C003A6767 /* TabBarWithCorners.swift */,
 			);
 			path = astroapp;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC2A3D172C64B52D003A6767 /* ViewController.swift in Sources */,
+				CC2A3D292C64BC2C003A6767 /* TabBarWithCorners.swift in Sources */,
+				CC2A3D272C64BB1B003A6767 /* TabbarController.swift in Sources */,
 				CC2A3D132C64B52D003A6767 /* AppDelegate.swift in Sources */,
 				CC2A3D152C64B52D003A6767 /* SceneDelegate.swift in Sources */,
 			);
