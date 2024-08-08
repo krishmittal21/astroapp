@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AuthenticationViewController.swift
 //  astroapp
 //
 //  Created by Krish Mittal on 08/08/24.
@@ -9,7 +9,7 @@ import UIKit
 import GoogleSignIn
 import AuthenticationServices
 
-class ViewController: BaseViewController {
+class AuthenticationViewController: BaseViewController {
 
     @IBOutlet weak var googleSignInButton: UIButton!
     @IBOutlet weak var appleSignInButton: UIButton!
@@ -51,7 +51,7 @@ class ViewController: BaseViewController {
 }
 
 // MARK: - ASAuthorizationControllerDelegate
-extension ViewController: ASAuthorizationControllerDelegate {
+extension AuthenticationViewController: ASAuthorizationControllerDelegate {
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
         AuthenticationManager.shared.handleSignInWithAppleCompletion(.success(authorization)) { success, error in
             if success {
@@ -70,7 +70,7 @@ extension ViewController: ASAuthorizationControllerDelegate {
 }
 
 // MARK: - ASAuthorizationControllerPresentationContextProviding
-extension ViewController: ASAuthorizationControllerPresentationContextProviding {
+extension AuthenticationViewController: ASAuthorizationControllerPresentationContextProviding {
     func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
         return self.view.window!
     }

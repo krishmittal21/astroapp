@@ -16,7 +16,7 @@ class BaseViewController: UIViewController {
     }
     
     func transitionToLogin() {
-        let loginViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.loginViewController) as? ViewController
+        let loginViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.loginViewController) as? AuthenticationViewController
         view.window?.rootViewController = loginViewController
         view.window?.makeKeyAndVisible()
     }

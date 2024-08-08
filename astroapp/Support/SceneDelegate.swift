@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let tabbarViewController = storyboard.instantiateViewController(identifier: Constants.Storyboard.tabbarViewController) as! TabbarController
             window.rootViewController = tabbarViewController
         } else {
-            let loginViewController = storyboard.instantiateViewController(identifier: Constants.Storyboard.loginViewController) as! ViewController
+            let loginViewController = storyboard.instantiateViewController(identifier: Constants.Storyboard.loginViewController) as! AuthenticationViewController
             window.rootViewController = loginViewController
         }
         

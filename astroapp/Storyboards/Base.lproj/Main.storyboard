@@ -11,7 +11,7 @@
         <!--Love-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="astroapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AuthenticationViewController" customModule="astroapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -240,16 +240,16 @@
             </objects>
             <point key="canvasLocation" x="-3769" y="-99"/>
         </scene>
-        <!--View Controller-->
+        <!--Authentication View Controller-->
         <scene sceneID="OaS-Nj-9wl">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="a9J-Bn-pGF" customClass="ViewController" customModule="astroapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="a9J-Bn-pGF" customClass="AuthenticationViewController" customModule="astroapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yuZ-zz-EJD">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="Elz-U2-wq9">
-                                <rect key="frame" x="40" y="665" width="313" height="296.33333333333326"/>
+                                <rect key="frame" x="40" y="959.00000000000011" width="313" height="296.33333333333337"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfp-46-g57">
                                         <rect key="frame" x="0.0" y="0.0" width="313" height="34.333333333333336"/>
@@ -264,7 +264,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcC-TJ-O1L">
-                                        <rect key="frame" x="0.0" y="87.333333333333371" width="313" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="87.333333333333258" width="313" height="34.333333333333343"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="afl-1x-GUv"/>
                                         </constraints>
@@ -275,7 +275,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmU-G3-DUm">
-                                        <rect key="frame" x="0.0" y="174.66666666666663" width="313" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="174.66666666666674" width="313" height="34.333333333333343"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="n4p-tP-E7v"/>
                                         </constraints>
