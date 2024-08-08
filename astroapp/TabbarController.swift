@@ -8,7 +8,7 @@
 import UIKit
 
 class TabbarController: UITabBarController {
-    
+
     var upperLineView: UIView!
     
     let spacing: CGFloat = 12
@@ -21,19 +21,23 @@ class TabbarController: UITabBarController {
         }
     }
     
-    ///Add tabbar item indicator uper line
-    func addTabbarIndicatorView(index: Int, isFirstTime: Bool = false){
+    func addTabbarIndicatorView(index: Int, isFirstTime: Bool = false) {
         guard let tabView = tabBar.items?[index].value(forKey: "view") as? UIView else {
             return
         }
-        if !isFirstTime{
-            upperLineView.removeFromSuperview()
+        
+        let newFrame = CGRect(x: tabView.frame.minX + spacing, y: tabView.frame.minY + 0.1, width: tabView.frame.size.width - spacing * 2, height: 4)
+        
+        if isFirstTime {
+            upperLineView = UIView(frame: newFrame)
+            upperLineView.backgroundColor = UIColor.white
+            tabBar.addSubview(upperLineView)
+        } else {
+            UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseInOut], animations: {
+                self.upperLineView.frame = newFrame
+            }, completion: nil)
         }
-        upperLineView = UIView(frame: CGRect(x: tabView.frame.minX + spacing, y: tabView.frame.minY + 0.1, width: tabView.frame.size.width - spacing * 2, height: 4))
-        upperLineView.backgroundColor = UIColor.white
-        tabBar.addSubview(upperLineView)
     }
-
 }
 
 extension TabbarController: UITabBarControllerDelegate {
@@ -41,3 +45,4 @@ extension TabbarController: UITabBarControllerDelegate {
         addTabbarIndicatorView(index: self.selectedIndex)
     }
 }
+
