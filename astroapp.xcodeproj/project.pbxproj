@@ -12,6 +12,7 @@
 		CC081C282C64D73C00ED81BB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC081C272C64D73C00ED81BB /* LoginViewController.swift */; };
 		CC081C2A2C64F96700ED81BB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC081C292C64F96700ED81BB /* Constants.swift */; };
 		CC081C2C2C64FAAF00ED81BB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC081C2B2C64FAAF00ED81BB /* BaseViewController.swift */; };
+		CC081C2E2C64FB9200ED81BB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC081C2D2C64FB9200ED81BB /* HomeViewController.swift */; };
 		CC2A3D132C64B52D003A6767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D122C64B52D003A6767 /* AppDelegate.swift */; };
 		CC2A3D152C64B52D003A6767 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D142C64B52D003A6767 /* SceneDelegate.swift */; };
 		CC2A3D172C64B52D003A6767 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D162C64B52D003A6767 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 		CC081C272C64D73C00ED81BB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CC081C292C64F96700ED81BB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CC081C2B2C64FAAF00ED81BB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CC081C2D2C64FB9200ED81BB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CC2A3D0F2C64B52D003A6767 /* astroapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = astroapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2A3D122C64B52D003A6767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC2A3D142C64B52D003A6767 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				CC081C272C64D73C00ED81BB /* LoginViewController.swift */,
 				CC081C292C64F96700ED81BB /* Constants.swift */,
 				CC081C2B2C64FAAF00ED81BB /* BaseViewController.swift */,
+				CC081C2D2C64FB9200ED81BB /* HomeViewController.swift */,
 			);
 			path = astroapp;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				CC081C262C64D73000ED81BB /* RegisterViewController.swift in Sources */,
 				CC2A3D292C64BC2C003A6767 /* TabBarWithCorners.swift in Sources */,
 				CC2A3D3E2C64CF96003A6767 /* AuthenticationManager.swift in Sources */,
+				CC081C2E2C64FB9200ED81BB /* HomeViewController.swift in Sources */,
 				CC2A3D272C64BB1B003A6767 /* TabbarController.swift in Sources */,
 				CC081C242C64D03B00ED81BB /* AAUser.swift in Sources */,
 				CC2A3D402C64CFAE003A6767 /* FirestoreDatabaseManager.swift in Sources */,

@@ -128,14 +128,28 @@
         <!--Home-->
         <scene sceneID="bCj-30-aO6">
             <objects>
-                <viewController id="EhA-mi-D3T" sceneMemberID="viewController">
+                <viewController id="EhA-mi-D3T" customClass="HomeViewController" customModule="astroapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PPN-xR-u7o">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGt-xx-IKs">
+                                <rect key="frame" x="152" y="281" width="90" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signOutButtonTapped:" destination="EhA-mi-D3T" eventType="touchUpInside" id="URo-Fa-amB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hqB-Pp-1NW"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="HZK-re-95V"/>
+                    <connections>
+                        <outlet property="signOutButton" destination="aGt-xx-IKs" id="Cii-8H-JH0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xtr-q7-jbz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -229,7 +243,7 @@
         <!--View Controller-->
         <scene sceneID="OaS-Nj-9wl">
             <objects>
-                <viewController id="a9J-Bn-pGF" customClass="ViewController" customModule="astroapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="a9J-Bn-pGF" customClass="ViewController" customModule="astroapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yuZ-zz-EJD">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

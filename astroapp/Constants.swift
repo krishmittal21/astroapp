@@ -10,5 +10,6 @@ import Foundation
 struct Constants {
     struct Storyboard {
         static let tabbarViewController = "TabbarVC"
+        static let loginViewController = "LoginViewController"
     }
 }
