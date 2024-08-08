@@ -116,6 +116,7 @@
                         <outlet property="confirmPasswordTextField" destination="hA4-nN-J1Y" id="IyG-Oc-nkP"/>
                         <outlet property="emailTextField" destination="Ycn-vx-fSy" id="y4p-3G-RNg"/>
                         <outlet property="errorLabel" destination="dPq-1G-9L7" id="tJV-sU-eZN"/>
+                        <outlet property="nameTextField" destination="qR7-zg-0Ac" id="3CJ-9T-yfb"/>
                         <outlet property="passwordTextField" destination="DCH-mG-QTS" id="uBN-BY-Raa"/>
                         <outlet property="signUpButton" destination="r38-ll-etG" id="MdW-03-Ypf"/>
                     </connections>
