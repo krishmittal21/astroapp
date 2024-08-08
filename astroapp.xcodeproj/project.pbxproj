@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CC081C242C64D03B00ED81BB /* AAUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC081C232C64D03B00ED81BB /* AAUser.swift */; };
+		CC081C262C64D73000ED81BB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC081C252C64D73000ED81BB /* RegisterViewController.swift */; };
+		CC081C282C64D73C00ED81BB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC081C272C64D73C00ED81BB /* LoginViewController.swift */; };
 		CC2A3D132C64B52D003A6767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D122C64B52D003A6767 /* AppDelegate.swift */; };
 		CC2A3D152C64B52D003A6767 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D142C64B52D003A6767 /* SceneDelegate.swift */; };
 		CC2A3D172C64B52D003A6767 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D162C64B52D003A6767 /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		CC081C232C64D03B00ED81BB /* AAUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAUser.swift; sourceTree = "<group>"; };
+		CC081C252C64D73000ED81BB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CC081C272C64D73C00ED81BB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CC2A3D0F2C64B52D003A6767 /* astroapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = astroapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2A3D122C64B52D003A6767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC2A3D142C64B52D003A6767 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 				CC2A3D3D2C64CF96003A6767 /* AuthenticationManager.swift */,
 				CC2A3D2A2C64C7A2003A6767 /* UIColorExtension.swift */,
 				CC081C232C64D03B00ED81BB /* AAUser.swift */,
+				CC081C252C64D73000ED81BB /* RegisterViewController.swift */,
+				CC081C272C64D73C00ED81BB /* LoginViewController.swift */,
 			);
 			path = astroapp;
 			sourceTree = "<group>";
@@ -187,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC2A3D172C64B52D003A6767 /* ViewController.swift in Sources */,
+				CC081C262C64D73000ED81BB /* RegisterViewController.swift in Sources */,
 				CC2A3D292C64BC2C003A6767 /* TabBarWithCorners.swift in Sources */,
 				CC2A3D3E2C64CF96003A6767 /* AuthenticationManager.swift in Sources */,
 				CC2A3D272C64BB1B003A6767 /* TabbarController.swift in Sources */,
@@ -195,6 +202,7 @@
 				CC2A3D132C64B52D003A6767 /* AppDelegate.swift in Sources */,
 				CC2A3D152C64B52D003A6767 /* SceneDelegate.swift in Sources */,
 				CC2A3D2B2C64C7A2003A6767 /* UIColorExtension.swift in Sources */,
+				CC081C282C64D73C00ED81BB /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
