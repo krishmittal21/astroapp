@@ -80,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				CC081C292C64F96700ED81BB /* Constants.swift */,
+				CC081C2F2C65061100ED81BB /* Utilities.swift */,
 				CC081C332C650D3000ED81BB /* Extensions */,
 			);
 			path = Helpers;
