@@ -9,7 +9,7 @@ import UIKit
 import GoogleSignIn
 import AuthenticationServices
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
 
     @IBOutlet weak var googleSignInButton: UIButton!
     @IBOutlet weak var appleSignInButton: UIButton!
@@ -22,10 +22,9 @@ class ViewController: UIViewController {
         AuthenticationManager.shared.signInWithGoogle(presentingViewController: self) { success, error in
             if success {
                 print("Google Sign-In successful!")
-                // Handle post sign-in actions, such as navigating to the home screen
+                self.transitionToHome()
             } else if let error = error {
                 print("Google Sign-In failed: \(error.localizedDescription)")
-                // Handle error
             }
         }
     }
@@ -47,10 +46,9 @@ extension ViewController: ASAuthorizationControllerDelegate {
         AuthenticationManager.shared.handleSignInWithAppleCompletion(.success(authorization)) { success, error in
             if success {
                 print("Apple Sign-In successful!")
-                // Handle post sign-in actions, such as navigating to the home screen
+                self.transitionToHome()
             } else if let error = error {
                 print("Apple Sign-In failed: \(error.localizedDescription)")
-                // Handle error
             }
         }
     }

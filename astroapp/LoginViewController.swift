@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: BaseViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -34,6 +34,7 @@ class LoginViewController: UIViewController {
             guard let self = self else { return }
             if success {
                 print("Log-In successful!")
+                self.transitionToHome()
             } else if let error = error {
                 self.errorLabel.text = "Log-In failed: \(error.localizedDescription)"
             } else {

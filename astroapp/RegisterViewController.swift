@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: BaseViewController {
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -39,6 +39,7 @@ class RegisterViewController: UIViewController {
             guard let self = self else { return }
             if success {
                 print("Sign-Up successful!")
+                self.transitionToHome()
             } else if let error = error {
                 self.errorLabel.text = "Sign-Up failed: \(error.localizedDescription)"
             } else {

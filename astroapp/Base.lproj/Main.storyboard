@@ -302,7 +302,7 @@
         <!--Tabbar Controller-->
         <scene sceneID="vwy-jI-tMh">
             <objects>
-                <tabBarController id="Hdh-nC-rba" customClass="TabbarController" customModule="astroapp" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabbarVC" id="Hdh-nC-rba" customClass="TabbarController" customModule="astroapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="32a-Dy-x9z" customClass="TabBarWithCorners" customModule="astroapp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
