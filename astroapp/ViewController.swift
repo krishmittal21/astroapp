@@ -13,9 +13,19 @@ class ViewController: BaseViewController {
 
     @IBOutlet weak var googleSignInButton: UIButton!
     @IBOutlet weak var appleSignInButton: UIButton!
+    @IBOutlet weak var signupButton: UIButton!
+    @IBOutlet weak var signInButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpElements()
+    }
+    
+    func setUpElements() {
+        Utilities.styleFilledButton(googleSignInButton)
+        Utilities.styleFilledButton(appleSignInButton)
+        Utilities.styleFilledButton(signInButton)
+        Utilities.styleHollowButton(signupButton)
     }
 
     @IBAction func googleButtonTapped(_ sender: Any) {

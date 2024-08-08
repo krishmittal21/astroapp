@@ -248,13 +248,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Elz-U2-wq9">
-                                <rect key="frame" x="40" y="543" width="313" height="197.33333333333337"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="Elz-U2-wq9">
+                                <rect key="frame" x="40" y="665" width="313" height="296.33333333333326"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfp-46-g57">
                                         <rect key="frame" x="0.0" y="0.0" width="313" height="34.333333333333336"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Eyj-qw-yNB"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="qjg-Jg-2cw"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Sign in with Google"/>
@@ -263,7 +264,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcC-TJ-O1L">
-                                        <rect key="frame" x="0.0" y="54.333333333333371" width="313" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="87.333333333333371" width="313" height="34.333333333333343"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="afl-1x-GUv"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Sign in with Apple"/>
                                         <connections>
@@ -271,7 +275,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmU-G3-DUm">
-                                        <rect key="frame" x="0.0" y="108.66666666666663" width="313" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="174.66666666666663" width="313" height="34.333333333333343"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="n4p-tP-E7v"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Sign in with Email"/>
                                         <connections>
@@ -279,7 +286,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Dc-Bb-mTa">
-                                        <rect key="frame" x="0.0" y="163" width="313" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="262" width="313" height="34.333333333333314"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="eYj-97-pkd"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Register with Email"/>
                                         <connections>
@@ -299,19 +309,25 @@
                         <constraints>
                             <constraint firstItem="Bjl-Ac-BVV" firstAttribute="bottom" secondItem="Elz-U2-wq9" secondAttribute="bottom" constant="40" id="1hL-bH-5MY"/>
                             <constraint firstItem="Elz-U2-wq9" firstAttribute="top" secondItem="Bjl-Ac-BVV" secondAttribute="top" constant="606" id="Ggp-IT-VLT"/>
+                            <constraint firstItem="Bjl-Ac-BVV" firstAttribute="bottom" secondItem="Elz-U2-wq9" secondAttribute="bottom" constant="212" id="MG5-Ew-Yd2"/>
+                            <constraint firstItem="Elz-U2-wq9" firstAttribute="top" secondItem="Bjl-Ac-BVV" secondAttribute="top" constant="500" id="ZY0-hc-ncR"/>
                             <constraint firstItem="Elz-U2-wq9" firstAttribute="leading" secondItem="Bjl-Ac-BVV" secondAttribute="leading" constant="40" id="k2d-rF-c3X"/>
                             <constraint firstItem="Bjl-Ac-BVV" firstAttribute="trailing" secondItem="Elz-U2-wq9" secondAttribute="trailing" constant="40" id="p8S-wL-F4Y"/>
+                            <constraint firstItem="Elz-U2-wq9" firstAttribute="top" secondItem="Bjl-Ac-BVV" secondAttribute="top" constant="122" id="qdt-BF-AcG"/>
+                            <constraint firstItem="Elz-U2-wq9" firstAttribute="top" secondItem="Bjl-Ac-BVV" secondAttribute="top" constant="900" id="wpQ-Hp-C1C"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BMx-B7-Rv6"/>
                     <connections>
                         <outlet property="appleSignInButton" destination="qcC-TJ-O1L" id="0XM-7D-g1C"/>
                         <outlet property="googleSignInButton" destination="yfp-46-g57" id="uup-4p-K1l"/>
+                        <outlet property="signInButton" destination="XmU-G3-DUm" id="bu5-7L-cQ1"/>
+                        <outlet property="signupButton" destination="2Dc-Bb-mTa" id="amR-6c-vdr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xTJ-Tk-zl1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2657" y="-99"/>
+            <point key="canvasLocation" x="-2657.2519083969464" y="-99.295774647887328"/>
         </scene>
         <!--Tabbar Controller-->
         <scene sceneID="vwy-jI-tMh">

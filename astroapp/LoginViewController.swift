@@ -16,8 +16,14 @@ class LoginViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        errorLabel.text = ""
+        setUpElements()
+    }
+    
+    func setUpElements() {
+        Utilities.styleTextField(emailTextField)
+        Utilities.styleTextField(passwordTextField)
+        Utilities.styleFilledButton(logInButton)
     }
     
     @IBAction func logInTapped(_ sender: Any) {

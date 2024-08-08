@@ -19,6 +19,15 @@ class RegisterViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         errorLabel.text = ""
+        setUpElements()
+    }
+    
+    func setUpElements() {
+        Utilities.styleTextField(nameTextField)
+        Utilities.styleTextField(emailTextField)
+        Utilities.styleTextField(passwordTextField)
+        Utilities.styleTextField(confirmPasswordTextField)
+        Utilities.styleFilledButton(signUpButton)
     }
     
     @IBAction func signUpTapped(_ sender: Any) {
