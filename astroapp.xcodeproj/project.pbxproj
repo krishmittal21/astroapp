@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC081C242C64D03B00ED81BB /* AAUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC081C232C64D03B00ED81BB /* AAUser.swift */; };
 		CC2A3D132C64B52D003A6767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D122C64B52D003A6767 /* AppDelegate.swift */; };
 		CC2A3D152C64B52D003A6767 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D142C64B52D003A6767 /* SceneDelegate.swift */; };
 		CC2A3D172C64B52D003A6767 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D162C64B52D003A6767 /* ViewController.swift */; };
@@ -23,9 +24,12 @@
 		CC2A3D372C64CD06003A6767 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = CC2A3D362C64CD06003A6767 /* FirebaseDatabase */; };
 		CC2A3D392C64CD06003A6767 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CC2A3D382C64CD06003A6767 /* FirebaseStorage */; };
 		CC2A3D3B2C64CED8003A6767 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC2A3D3A2C64CED8003A6767 /* GoogleService-Info.plist */; };
+		CC2A3D3E2C64CF96003A6767 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D3D2C64CF96003A6767 /* AuthenticationManager.swift */; };
+		CC2A3D402C64CFAE003A6767 /* FirestoreDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D3F2C64CFAD003A6767 /* FirestoreDatabaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC081C232C64D03B00ED81BB /* AAUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAUser.swift; sourceTree = "<group>"; };
 		CC2A3D0F2C64B52D003A6767 /* astroapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = astroapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2A3D122C64B52D003A6767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC2A3D142C64B52D003A6767 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,8 @@
 		CC2A3D2A2C64C7A2003A6767 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		CC2A3D3A2C64CED8003A6767 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CC2A3D3C2C64CF22003A6767 /* astroapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = astroapp.entitlements; sourceTree = "<group>"; };
+		CC2A3D3D2C64CF96003A6767 /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		CC2A3D3F2C64CFAD003A6767 /* FirestoreDatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirestoreDatabaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +94,10 @@
 				CC2A3D202C64B52F003A6767 /* Info.plist */,
 				CC2A3D262C64BB1B003A6767 /* TabbarController.swift */,
 				CC2A3D282C64BC2C003A6767 /* TabBarWithCorners.swift */,
+				CC2A3D3F2C64CFAD003A6767 /* FirestoreDatabaseManager.swift */,
+				CC2A3D3D2C64CF96003A6767 /* AuthenticationManager.swift */,
 				CC2A3D2A2C64C7A2003A6767 /* UIColorExtension.swift */,
+				CC081C232C64D03B00ED81BB /* AAUser.swift */,
 			);
 			path = astroapp;
 			sourceTree = "<group>";
@@ -179,7 +188,10 @@
 			files = (
 				CC2A3D172C64B52D003A6767 /* ViewController.swift in Sources */,
 				CC2A3D292C64BC2C003A6767 /* TabBarWithCorners.swift in Sources */,
+				CC2A3D3E2C64CF96003A6767 /* AuthenticationManager.swift in Sources */,
 				CC2A3D272C64BB1B003A6767 /* TabbarController.swift in Sources */,
+				CC081C242C64D03B00ED81BB /* AAUser.swift in Sources */,
+				CC2A3D402C64CFAE003A6767 /* FirestoreDatabaseManager.swift in Sources */,
 				CC2A3D132C64B52D003A6767 /* AppDelegate.swift in Sources */,
 				CC2A3D152C64B52D003A6767 /* SceneDelegate.swift in Sources */,
 				CC2A3D2B2C64C7A2003A6767 /* UIColorExtension.swift in Sources */,
