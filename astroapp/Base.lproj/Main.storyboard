@@ -260,7 +260,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Sign in with Email"/>
                                         <connections>
-                                            <segue destination="ngK-FJ-9pC" kind="show" id="aCd-KN-TLd"/>
+                                            <segue destination="RKb-vX-G0P" kind="show" id="QZI-B1-laJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Dc-Bb-mTa">
@@ -268,7 +268,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Rrgister with Email"/>
                                         <connections>
-                                            <segue destination="RKb-vX-G0P" kind="show" id="J3l-c5-k2j"/>
+                                            <segue destination="ngK-FJ-9pC" kind="show" id="UFg-Hv-K26"/>
                                         </connections>
                                     </button>
                                 </subviews>
