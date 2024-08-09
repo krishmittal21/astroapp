@@ -36,6 +36,8 @@
 		CC355E6A2C660D9400FDE635 /* AAZodiacSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC355E692C660D9400FDE635 /* AAZodiacSign.swift */; };
 		CC355E6C2C660EF600FDE635 /* AAHoroscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC355E6B2C660EF600FDE635 /* AAHoroscope.swift */; };
 		CC355E6E2C661DCA00FDE635 /* LoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC355E6D2C661DCA00FDE635 /* LoveViewController.swift */; };
+		CC355E702C6629BA00FDE635 /* AAArticlePreviewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC355E6F2C6629BA00FDE635 /* AAArticlePreviewCard.swift */; };
+		CC355E722C6629D200FDE635 /* ArticlesPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC355E712C6629D200FDE635 /* ArticlesPreviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,8 @@
 		CC355E692C660D9400FDE635 /* AAZodiacSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAZodiacSign.swift; sourceTree = "<group>"; };
 		CC355E6B2C660EF600FDE635 /* AAHoroscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAHoroscope.swift; sourceTree = "<group>"; };
 		CC355E6D2C661DCA00FDE635 /* LoveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveViewController.swift; sourceTree = "<group>"; };
+		CC355E6F2C6629BA00FDE635 /* AAArticlePreviewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAArticlePreviewCard.swift; sourceTree = "<group>"; };
+		CC355E712C6629D200FDE635 /* ArticlesPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesPreviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 				CC081C2B2C64FAAF00ED81BB /* BaseViewController.swift */,
 				CC081C2D2C64FB9200ED81BB /* HomeViewController.swift */,
 				CC355E6D2C661DCA00FDE635 /* LoveViewController.swift */,
+				CC355E712C6629D200FDE635 /* ArticlesPreviewViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				CC2A3D282C64BC2C003A6767 /* TabBarWithCorners.swift */,
+				CC355E6F2C6629BA00FDE635 /* AAArticlePreviewCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -291,6 +297,7 @@
 				CC081C2C2C64FAAF00ED81BB /* BaseViewController.swift in Sources */,
 				CC2A3D172C64B52D003A6767 /* AuthenticationViewController.swift in Sources */,
 				CC081C262C64D73000ED81BB /* RegisterViewController.swift in Sources */,
+				CC355E702C6629BA00FDE635 /* AAArticlePreviewCard.swift in Sources */,
 				CC081C302C65061100ED81BB /* Utilities.swift in Sources */,
 				CC355E682C660CCA00FDE635 /* AAArticles.swift in Sources */,
 				CC2A3D292C64BC2C003A6767 /* TabBarWithCorners.swift in Sources */,
@@ -303,6 +310,7 @@
 				CC2A3D402C64CFAE003A6767 /* FirestoreDatabaseManager.swift in Sources */,
 				CC2A3D132C64B52D003A6767 /* AppDelegate.swift in Sources */,
 				CC2A3D152C64B52D003A6767 /* SceneDelegate.swift in Sources */,
+				CC355E722C6629D200FDE635 /* ArticlesPreviewViewController.swift in Sources */,
 				CC2A3D2B2C64C7A2003A6767 /* UIColorExtension.swift in Sources */,
 				CC081C282C64D73C00ED81BB /* LoginViewController.swift in Sources */,
 				CC081C2A2C64F96700ED81BB /* Constants.swift in Sources */,
