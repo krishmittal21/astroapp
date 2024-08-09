@@ -34,6 +34,7 @@
 		CC2A3D402C64CFAE003A6767 /* FirestoreDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D3F2C64CFAD003A6767 /* FirestoreDatabaseManager.swift */; };
 		CC355E682C660CCA00FDE635 /* AAArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC355E672C660CCA00FDE635 /* AAArticles.swift */; };
 		CC355E6A2C660D9400FDE635 /* AAZodiacSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC355E692C660D9400FDE635 /* AAZodiacSign.swift */; };
+		CC355E6C2C660EF600FDE635 /* AAHoroscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC355E6B2C660EF600FDE635 /* AAHoroscope.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		CC2A3D3F2C64CFAD003A6767 /* FirestoreDatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirestoreDatabaseManager.swift; sourceTree = "<group>"; };
 		CC355E672C660CCA00FDE635 /* AAArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAArticles.swift; sourceTree = "<group>"; };
 		CC355E692C660D9400FDE635 /* AAZodiacSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAZodiacSign.swift; sourceTree = "<group>"; };
+		CC355E6B2C660EF600FDE635 /* AAHoroscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAHoroscope.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				CC081C232C64D03B00ED81BB /* AAUser.swift */,
 				CC355E672C660CCA00FDE635 /* AAArticles.swift */,
 				CC355E692C660D9400FDE635 /* AAZodiacSign.swift */,
+				CC355E6B2C660EF600FDE635 /* AAHoroscope.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				CC081C2E2C64FB9200ED81BB /* HomeViewController.swift in Sources */,
 				CC2A3D272C64BB1B003A6767 /* TabbarController.swift in Sources */,
 				CC081C242C64D03B00ED81BB /* AAUser.swift in Sources */,
+				CC355E6C2C660EF600FDE635 /* AAHoroscope.swift in Sources */,
 				CC2A3D402C64CFAE003A6767 /* FirestoreDatabaseManager.swift in Sources */,
 				CC2A3D132C64B52D003A6767 /* AppDelegate.swift in Sources */,
 				CC2A3D152C64B52D003A6767 /* SceneDelegate.swift in Sources */,
