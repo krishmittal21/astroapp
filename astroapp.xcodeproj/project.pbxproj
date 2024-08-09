@@ -33,6 +33,7 @@
 		CC2A3D3E2C64CF96003A6767 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D3D2C64CF96003A6767 /* AuthenticationManager.swift */; };
 		CC2A3D402C64CFAE003A6767 /* FirestoreDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A3D3F2C64CFAD003A6767 /* FirestoreDatabaseManager.swift */; };
 		CC355E682C660CCA00FDE635 /* AAArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC355E672C660CCA00FDE635 /* AAArticles.swift */; };
+		CC355E6A2C660D9400FDE635 /* AAZodiacSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC355E692C660D9400FDE635 /* AAZodiacSign.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		CC2A3D3D2C64CF96003A6767 /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		CC2A3D3F2C64CFAD003A6767 /* FirestoreDatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirestoreDatabaseManager.swift; sourceTree = "<group>"; };
 		CC355E672C660CCA00FDE635 /* AAArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAArticles.swift; sourceTree = "<group>"; };
+		CC355E692C660D9400FDE635 /* AAZodiacSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAZodiacSign.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				CC081C232C64D03B00ED81BB /* AAUser.swift */,
 				CC355E672C660CCA00FDE635 /* AAArticles.swift */,
+				CC355E692C660D9400FDE635 /* AAZodiacSign.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				CC2A3D2B2C64C7A2003A6767 /* UIColorExtension.swift in Sources */,
 				CC081C282C64D73C00ED81BB /* LoginViewController.swift in Sources */,
 				CC081C2A2C64F96700ED81BB /* Constants.swift in Sources */,
+				CC355E6A2C660D9400FDE635 /* AAZodiacSign.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
