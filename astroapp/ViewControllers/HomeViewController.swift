@@ -8,15 +8,9 @@
 import UIKit
 
 class HomeViewController: BaseViewController {
-
-    @IBOutlet weak var signOutButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    @IBAction func signOutButtonTapped(_ sender: Any) {
-        AuthenticationManager.shared.signOut()
-        self.transitionToLogin()
-    }
 }
